@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@hgb/core/less/hgb-app-defaults.less";
+@import "./less/app-mixins.less";
+
+body {
+  background: #eee;
+}
+
+.container {
+  @containerMargins: 20px;
+  background: #fff;
+  padding: 10px;
+  min-height: calc(100vh - 2*@containerMargins);
+  margin-top: @containerMargins;
+  margin-bottom: @containerMargins;
+
+  .hgb-box-shadow1();
+}
