@@ -6,7 +6,7 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  readonly MAXSTEPS = 3;
+  readonly MAXSTEPS = 5;
 
   step = 0;
 
