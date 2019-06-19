@@ -5,13 +5,18 @@ body {
   background: #eee;
 }
 
+@containerMargins: 20px;
 .container {
-  @containerMargins: 20px;
-  background: #fff;
-  padding: 10px;
+  // background: #fff;
+  // padding: 10px;
+  // .hgb-box-shadow1();
+
   min-height: calc(100vh - 2*@containerMargins);
   margin-top: @containerMargins;
   margin-bottom: @containerMargins;
+}
 
+markdown img {
+  border: 1px solid #ccc;
   .hgb-box-shadow1();
 }

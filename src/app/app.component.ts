@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'hgb-root',
@@ -6,5 +6,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'wernicke-presentation';
+  readonly MAXSTEPS = 3;
+
+  step = 0;
+
+  setStep(index: number) {
+    this.step = index;
+  }
+
+  nextStep() {
+    if (this.step < this.MAXSTEPS - 1)
+      this.step++;
+  }
+
+  prevStep() {
+    if (this.step > 0)
+      this.step--;
+  }
+
+  @HostListener('window:keydown', ['$event'])
+  onKeyDown(event: KeyboardEvent) {
+    // console.log(event);
+    if (event.ctrlKey && event.key == "ArrowLeft") {
+      this.prevStep();
+      event.preventDefault();
+    }
+    else if (event.ctrlKey && event.key == "ArrowRight") {
+      this.nextStep();
+      event.preventDefault();
+    }
+  }
+
 }
