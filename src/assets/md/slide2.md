@@ -2,4 +2,4 @@
 
 It is important to distinguish Atomic and Molecular entities
 
-![](assets/gifs/show-atoms.gif)
+![](assets/gifs/demo-atoms-vs-molecules.gif)
