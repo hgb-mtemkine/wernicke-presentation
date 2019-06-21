@@ -1,4 +1,4 @@
-# Atomic vs molecular
+### Atomic vs molecular
 
 It is important to distinguish Atomic and Molecular entities
 

@@ -30,6 +30,18 @@ export class AppComponent {
       title: 'Growing molecular entities',
       doc: 'assets/md/slide5.md'
     },
+    <SlideVM> {
+      title: 'Interesting analysis',
+      doc: 'assets/md/slide6.md'
+    },
+    // <SlideVM> {
+    //   title: 'Anatytics of natural language',
+    //   doc: 'assets/md/slidex-1.md'
+    // },
+    // <SlideVM> {
+    //   title: 'Anomaly rectification',
+    //   doc: 'assets/md/slidex-2.md'
+    // },
   ];
 
   setStep(index: number) {
